@@ -1,1 +1,20 @@
 
+*  [https://www.deepmind.com/learning-resources/introduction-to-reinforcement-learning-with-david-silver]
+  
+* (https://spinningup.openai.com/en/latest/spinningup/rl_intro.html) 
+
+* [https://arxiv.org/pdf/1312.5602.pdf](https://arxiv.org/pdf/1312.5602.pdf) 
+
+* [https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html]
+
+* [https://github.com/vwxyzjn/cleanrl]
+
+* [https://github.com/kenjyoung/MinAtar](https://github.com/kenjyoung/MinAtar) 
+
+* https://wiki.pathmind.com/deep-reinforcement-learning#neural
+
+* https://github.com/SSARCandy/breakout-env
+
+* https://github.com/fg91/Deep-Q-Learning/blob/master/DQN.ipynb
+
+* https://github.com/mswang12/minDQN
