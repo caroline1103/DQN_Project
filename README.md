@@ -104,6 +104,7 @@ Breakout before training           |  Breakout after training (Not obtained with
 ![](visual_examples/breakout_before_training.gif) | <img align="center" width="190" height="240" src="images/not_mine.gif">
 
 <br>
+
 ![](visual_examples/a.png)
 
 As we can see, the agent did not learn a lot trough its training. Even if the number of game played is low, it is not the only reason for those poor results. Such reasons are explained in the last part below.
