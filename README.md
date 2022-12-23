@@ -28,29 +28,27 @@ We get the following improvments after I train my computer to play cartpole:
 Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
-
-\n
+\\
 There is a signficant improvment!
-\n
+\\
 
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole1.png">
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole2.png">
 Furthermore, here are some plots of the evolutions of the game in two different training sessions:
 We observe that training is quite unstable, but the computer learns quite well if we give it enough time. It even hits the maximum duration really fast in the second example.
-\n
-\n
+\\\
 
 ## Breakout
-
+\\
 Breakout before training           |  Breakout after training (Not obtained with my DQN)
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/breakout_before_training.gif) | <img align="center" width="190" height="240" src="images/not_mine.gif">
-
+\\
 
 
 
 ## The issues..
-
+\\
 <img align="left" width="100" height="150" src="images/pacman.png">
 As you can see, the agent did not learn well on the breakout game. 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout.
@@ -59,6 +57,6 @@ Using the RGB as it is has proven to be difficult, as it's not efficient to trai
 This has proven difficult as I was using torch rather than tanserflow and was running int problem with the tensorflow library which I was not able to fix.
 Furthermore, as we observe only one image, we don't have a sense of which direction the ball might be moving in. For this reason, we need to consider a state as four stacked frames, which I was not able to correctly implement as I was running in issues with the the different sizes of the elements.
 I did include the notebook I was working on but which I did not manage to finish.
-
+\\\
 
 ### How to reproduce the results
