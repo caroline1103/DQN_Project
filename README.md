@@ -33,7 +33,6 @@ Cartpole before training           |  Cartpole after training
 
 
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole1.png">
-<br/>
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole2.png">
 Furthermore, here are some plots of the evolutions of the game in two different training sessions:
 We observe that training is quite unstable, but the computer learns quite well if we give it enough time. It even hits the maximum duration really fast in the second example.
