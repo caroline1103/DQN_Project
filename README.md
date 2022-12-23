@@ -5,9 +5,11 @@
 ## What is Deep Reinforcement Learning?
 
 Deep Reinforcement learning is a combination of reinforcement learning and deep learning. 
+In reinforcement learning, the problem is not supervised, meaning we let the computer explore the environment by itself and only give him a reward signal when he takes a good or bad action. We create a map between states and actions to the rewards they lead to
 
 
 ### Details on a Markov Decision Process
+
 
 ### And what about DQN?
 
@@ -36,7 +38,7 @@ Breakout before training           |  Breakout after training
 ## The issues..
 As you can see, the agent did not learn well on the breakout game. 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout.
-The main difference has been the observation space which was no longer a simple vector of length 4 but a full RGB image.
+The main difference has been the observation space which was no longer a simple vector of length 4 but a full RGB image. Furthermore, cartpole was rewarded at almost each step, as it gained reward from staying pright at each step. However, in breakout rewards are delayed, as it can take multiple frames/states until we hit a brick.
 Using the RGB as it is has proven to be difficult, as it's not efficient to train on. The papers proposed to turn the image in a grayscale and to crop it in a 84x84 matrix.
 This has proven difficult as I was using torch rather than tanserflow and was running int problem with the tensorflow library which I was not able to fix.
 Furthermore, as we observe only one image, we don't have a sense of which direction the ball might be moving in. For this reason, we need to consider a state as four stacked frames, which I was not able to correctly implement as I was running in issues with the the different sizes of the elements.
