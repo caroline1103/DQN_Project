@@ -101,6 +101,10 @@ Breakout before training           |  Breakout after training (Not obtained with
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/breakout_before_training.gif) | <img align="center" width="190" height="240" src="images/not_mine.gif">
 
+<br>
+![](visual_examples/a.png)
+
+As we can see, the agent did not learn a lot trough its training. Even if the number of game played is low, it is not the only reason for those poor results. Such reasons are explained in the last part below.
 
 ## The issues..
 
@@ -126,4 +130,13 @@ I did include the notebook I was working on but which I did not manage to finish
 ### How to reproduce the results
 
  <br>
+ 
+ There are three notebooks which I created. 
+ The are very similar, only a few functions change each time. I would recommand reading Cartpole as it is the most complete in terms of commentary of the code.
+ 
+ The unfinished one presents functions which if implemented correclty could allow for better results on breakout. The changes are specified at the begining of the notebook.
 
+All the packages and libraries needed are specified at the beggining of the file, including packages I needed to install. 
+There is one installation which requiered to kill the kernel and this prevents the notebook from running entirely at once. However, from 1. Packages forward, there should be no issues.
+
+No dataset were needed for this implementation.
