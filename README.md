@@ -8,6 +8,11 @@ Deep Reinforcement learning is a combination of reinforcement learning and deep 
 
 In reinforcement learning, the problem is not supervised, meaning we let the computer explore the environment by itself and we only give it a reward signal when he takes a good or bad action.
 
+### And what about DQN?
+Below is the Deep Q-Learning algorithm which was introduced by Mnih et al. 2013. DQN is here to predict the best action, as we cannot get the true $Q*(s,a)$.
+> The goal of DQN is "to connect a reinforcement learning algorithm to a deep neural network which operates directly on RGB images and efficiently process training data by using stochastic gradient updates."
+
+![](images/DQN.png)
 
 
 ### Details on a Markov Decision Process
@@ -15,15 +20,14 @@ In reinforcement learning, the problem is not supervised, meaning we let the com
 First, let's remember that a markov state is a state $S_t$ such that the next state $S_{t+1}$ only depends on the current state $S_t$ but not on the previous states $(S_{1}  , ... , S_{t-1})$.
 Then, a markov decision process is an environment in which all states are Markov. 
 
-Mathematically, we can define it as a tuple < $S,A,P,R,\gamma$ > where $S$ is a finite set of states, $A$ a finite set of actions, $P$ a state transition probability matrix, $R$ is a reward function and $\gamma>$ a discount factor.
+Mathematically, we can define it as a tuple < $S,A,P,R,\gamma$ > where $S$ is a finite set of states, $A$ a finite set of actions, $P$ a state transition probability matrix, $R$ is a reward function and $\gamma$ a discount factor.
 
-### And what about DQN?
-Below is the Deep Q-Learning algorithm which was introduced by Mnih et al. 2013. DQN is here to predict the best action, as we cannot get the true $Q*(s,a)$.
-> The goal of DQN is "to connect a reinforcement learning algorithm to a deep neural network which operates directly on RGB images and efficiently process training data by using stochastic gradient updates."
+Then, we can define a policy as $\pi(a \rvert s) = P(A_t = a \rvert S_t = s)$
 
-![](images/DQN.png)
+The optimal value function specifies the best possible performance in the MDP
 
 ![](images/Atari.jpg) 
+
 ## The games we played:
 
 I tried to implement a DQN algorithm on CartPole and Breakout from the gym environment. Using this environment allows us to easily observe and take an action in the game. It allows to easily access the rewards and the next state of the environment.
