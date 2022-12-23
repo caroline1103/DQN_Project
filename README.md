@@ -56,7 +56,7 @@ The main difference has been the observation space which was no longer a simple 
 Using the RGB as it is has proven to be difficult, as it's not efficient to train on. The papers proposed to turn the image in a grayscale and to crop it in a 84x84 matrix.
 This has proven difficult as I was using torch rather than tanserflow and was running int problem with the tensorflow library which I was not able to fix.
 Furthermore, as we observe only one image, we don't have a sense of which direction the ball might be moving in. For this reason, we need to consider a state as four stacked frames, which I was not able to correctly implement as I was running in issues with the the different sizes of the elements.
-I did include the notebook I was working on but which I did not manage to finish.
-\\\
+I did include the notebook I was working on but which I did not manage to finish.\
+
 
 ### How to reproduce the results
