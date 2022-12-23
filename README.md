@@ -9,7 +9,7 @@ Our games have a discrete action spaces, Cartpole can only move right or left an
 
 Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
-![](visual_examples/Cartpole_before_training.gif)  |  ![](Cartpole_after_training.gif)
+![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
 
 
-![](breakout_before_training.gif)
+![](visual_examples/breakout_before_training.gif)
