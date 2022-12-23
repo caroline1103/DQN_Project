@@ -8,21 +8,21 @@ Implementation of DQN algorithm on CartPole and Breakout from gym environment
 
 Our games have a discrete action spaces, Cartpole can only move right or left and Breakout has two more actions available: do nothing and fire.
 
-###Details on a Markov Decision Process
+### Details on a Markov Decision Process
 
-###And what about DQN?
+### And what about DQN?
 
 
-##The games we playes
+## The games we played:
 
-##Cartpole
+## Cartpole
 Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
 
 
-##Breakout
+## Breakout
 ![](visual_examples/breakout_before_training.gif)
 
 
-##The issues
+## The issues..
