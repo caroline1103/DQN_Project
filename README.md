@@ -105,7 +105,7 @@ Breakout before training           |  Breakout after training (Not obtained with
 
 <br>
 
-<img align="center" width="190" height="240" src="visual_examples/a.png.gif">
+<img align="center" width="190" height="240" src="visual_examples/a.png">
 
 As we can see, the agent did not learn a lot trough its training. Even if the number of game played is low, it is not the only reason for those poor results. Such reasons are explained in the last part below.
 
@@ -113,7 +113,7 @@ As we can see, the agent did not learn a lot trough its training. Even if the nu
 
  <br>
 
-<img align="left" width="100" height="150" src="images/pacman.png">
+<img align="left" width="350" height="300" src="images/pacman.png">
 As you can see, the agent did not learn well on the breakout game. 
 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout so it might not have been the best idea.
