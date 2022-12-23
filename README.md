@@ -3,19 +3,30 @@
 ![](images/tele.gif) 
 
 ## What is Deep Reinforcement Learning?
+ <br>
+
 
 Deep Reinforcement learning is a combination of reinforcement learning and deep learning. 
 
 In reinforcement learning, the problem is not supervised, meaning we let the computer explore the environment by itself and we only give it a reward signal when he takes a good or bad action.
 
+ <br>
+
+
 ### And what about DQN?
+
+ <br>
+
 Below is the Deep Q-Learning algorithm which was introduced by Mnih et al. 2013. DQN is here to predict the best action, as we cannot get the true $Q*(s,a)$.
 > The goal of DQN is "to connect a reinforcement learning algorithm to a deep neural network which operates directly on RGB images and efficiently process training data by using stochastic gradient updates."
 
 ![](images/DQN.png)
 
+ <br>
 
 ### Details on a Markov Decision Process
+
+ <br>
 
 First, let's remember that a markov state is a state $S_t$ such that the next state $S_{t+1}$ only depends on the current state $S_t$ but not on the previous states $(S_{1}  , ... , S_{t-1})$.
 Then, a markov decision process is an environment in which all states are Markov. 
@@ -39,11 +50,17 @@ Then, soving the Bellman equation can then be done iteratively by Q-learning, an
 
 ## The games we played:
 
+ <br>
+
 I tried to implement a DQN algorithm on CartPole and Breakout from the gym environment. Using this environment allows us to easily observe and take an action in the game. It allows to easily access the rewards and the next state of the environment.
 
 Both games have a discrete action spaces, Cartpole can only move right or left and Breakout has two more actions available: do nothing and fire. Further explanation are available in the notebook.
 
+ <br>
+
 ## Cartpole
+
+ <br>
 
 We get the following improvments after I train my computer to play cartpole:
 
@@ -51,14 +68,18 @@ Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
 
+ <br>
 
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole1.png">
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole2.png">
 Furthermore, here are some plots of the evolutions of the game in two different training sessions:
 We observe that training is quite unstable, but the computer learns quite well if we give it enough time. It even hits the maximum duration really fast in the second example.
- <br />
+
+ <br>
 
 ## Breakout
+
+ <br>
 
 Breakout before training           |  Breakout after training (Not obtained with my DQN)
 :---------------------------------:|:---------------------------------:
@@ -67,7 +88,9 @@ Breakout before training           |  Breakout after training (Not obtained with
 
 
 ## The issues..
- <br />
+
+ <br>
+
 <img align="left" width="100" height="150" src="images/pacman.png">
 As you can see, the agent did not learn well on the breakout game. 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout.
@@ -77,5 +100,10 @@ This has proven difficult as I was using torch rather than tanserflow and was ru
 Furthermore, as we observe only one image, we don't have a sense of which direction the ball might be moving in. For this reason, we need to consider a state as four stacked frames, which I was not able to correctly implement as I was running in issues with the the different sizes of the elements.
 I did include the notebook I was working on but which I did not manage to finish.
 
+ <br>
+
 
 ### How to reproduce the results
+
+ <br>
+
