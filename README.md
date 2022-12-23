@@ -30,9 +30,10 @@ Cartpole before training           |  Cartpole after training
 
 ## Breakout
 
-Breakout before training           |  Breakout after training
+Breakout before training           |  Breakout after training (Not obtained with my DQN)
 :---------------------------------:|:---------------------------------:
-![](visual_examples/breakout_before_training.gif) | ![](images/not_mine.gif)  (Not obtained with my DQN)
+![](visual_examples/breakout_before_training.gif) | <img align="center" width="100" height="150" src="images/not_mine.gif">
+
 
 
 
