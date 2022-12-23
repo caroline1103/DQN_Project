@@ -38,7 +38,7 @@ Breakout before training           |  Breakout after training
 
 ## The issues..
 
-![image alt >](images/pacman.png)
+<img align="left" width="100" height="150" src="images/pacman.png">
 As you can see, the agent did not learn well on the breakout game. 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout.
 The main difference has been the observation space which was no longer a simple vector of length 4 but a full RGB image. Furthermore, cartpole was rewarded at almost each step, as it gained reward from staying pright at each step. However, in breakout rewards are delayed, as it can take multiple frames/states until we hit a brick.
