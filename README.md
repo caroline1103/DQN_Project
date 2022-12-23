@@ -1,5 +1,7 @@
 # Deep Reinforcement Learning: Playing Atari games 🎮
 
+**Ressources** used for this project can be found in the **ressources.txt** file.
+
 ![](images/tele.gif) 
 
 ## What is Deep Reinforcement Learning?
