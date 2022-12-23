@@ -19,13 +19,23 @@ In reinforcement learning, the problem is not supervised, meaning we let the com
 
 I tried to implement a DQN algorithm on CartPole and Breakout from the gym environment. Using this environment allows us to easily observe and take an action in the game. It allows to easily access the rewards and the next state of the environment.
 
-Both games have a discrete action spaces, Cartpole can only move right or left and Breakout has two more actions available: do nothing and fire. 
+Both games have a discrete action spaces, Cartpole can only move right or left and Breakout has two more actions available: do nothing and fire. Further explanation are available in the notebook.
 
 ## Cartpole
+
+We get the following improvments after I train my computer to play cartpole:
 
 Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
+
+There is a signficant improvment!
+
+Furthermore, here are some plots of the evolutions of the game in two different training sessions:
+We observe that training is quite unstable, but the computer learns quite well if we give it enough time.
+
+<img align="right" width="150" height="100" src="visual_examples/duration_cartpole1.png">
+<img align="left" width="150" height="100" src="visual_examples/duration_cartpole2.png">
 
 
 ## Breakout
