@@ -84,8 +84,8 @@ Cartpole before training           |  Cartpole after training
 
 
 
-<img align="left" width="250" height="200" src="visual_examples/duration_cartpole1.png">
-<img align="left" width="250" height="200" src="visual_examples/duration_cartpole2.png">
+<img align="left" width="300" height="250" src="visual_examples/duration_cartpole1.png">
+<img align="left" width="300" height="250" src="visual_examples/duration_cartpole2.png">
 Furthermore, here are some plots of the evolutions of the game in two different training sessions:
 We observe that training is quite unstable, but the computer learns quite well if we give it enough time. It even hits the maximum duration possible really fast in the second example.
 
@@ -105,7 +105,7 @@ Breakout before training           |  Breakout after training (Not obtained with
 
 <br>
 
-![](visual_examples/a.png)
+<img align="center" width="190" height="240" src="visual_examples/a.png.gif">
 
 As we can see, the agent did not learn a lot trough its training. Even if the number of game played is low, it is not the only reason for those poor results. Such reasons are explained in the last part below.
 
