@@ -23,13 +23,18 @@ Then, a markov decision process is an environment in which all states are Markov
 Mathematically, we can define it as a tuple < $S,A,P,R,\gamma$ > where 
 * $S$ is a finite set of states 
 * $A$ a finite set of actions
-* $P$ a state transition probability matrix with P_{ss' a} = P(S_{t+1} = s' \rvert S_t=s, A_t=a)
-* $R$ is a reward function and $\gamma$ a discount factor with R_{s a} = E(R_{t+1} \rvert St=s, At=a)
+* $P$ a state transition probability matrix with $P_{ss' a} = P(S_{t+1} = s' \rvert S_t=s, A_t=a)$
+* $R$ is a reward function and $\gamma$ a discount factor with $R_{s a} = E(R_{t+1} \rvert St=s, At=a)$
 
-Then, we can define a policy as $\pi(a \rvert s) = P(A_t = a \rvert S_t = s)$
+Then, we can define a policy as $\pi(a \rvert s) = P(A_t = a \rvert S_t = s)$.
+We can also define the action value function: 
 
-The optimal value function specifies the best possible performance in the MDP
+$q_{\pi}(s,a) = E_{\pi}[R_{t+1} + \gamma q_{\pi}(S_{t+1},A_{t+1}) \rvert S_t=s, A_t=a)]$
 
+An optimal policy can be found by maximising over $q∗(s,a)$ such that if we know $q∗(s,a)$, we immediately have the optimal policy.
+
+Soving the Bellman equation can then be done iteratively by Q-learning, and the DQN algorithm above
+ <br />
 ![](images/Atari.jpg) 
 
 ## The games we played:
@@ -51,7 +56,7 @@ Cartpole before training           |  Cartpole after training
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole2.png">
 Furthermore, here are some plots of the evolutions of the game in two different training sessions:
 We observe that training is quite unstable, but the computer learns quite well if we give it enough time. It even hits the maximum duration really fast in the second example.
-
+ <br />
 
 ## Breakout
 
@@ -62,7 +67,7 @@ Breakout before training           |  Breakout after training (Not obtained with
 
 
 ## The issues..
-
+ <br />
 <img align="left" width="100" height="150" src="images/pacman.png">
 As you can see, the agent did not learn well on the breakout game. 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout.
