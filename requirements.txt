@@ -1,1 +1,34 @@
 
+gym[classic_control] == 0.25.2
+numpy == 1.21.6
+pygame == 2.1.2
+gym[atari,accept-rom-license]==0.21.0
+
+
+from collections import namedtuple, deque
+from itertools import count
+import math
+import random
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+from IPython import display #for the animations
+plt.ion()
+
+import gym
+
+#for the neural network
+import torch
+import torch.nn as nn 
+import torch.optim as optim
+import torch.nn.functional as F
+from torch.nn.functional import huber_loss
+#device
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+import os
+
+import tensorflow as tf
+import imageio
+from skimage.transform import resize
