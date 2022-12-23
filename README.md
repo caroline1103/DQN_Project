@@ -32,7 +32,9 @@ Let's remember that the Bellman equation is specifically $v = R + \gamma P v$ wi
 
 An optimal policy can be found by maximising over $q∗(s,a)$ such that if we know $q∗(s,a)$, we immediately have the optimal policy.
 Then, soving the Bellman equation can then be done iteratively by Q-learning, and in our case by the DQN algorithm above
- <br />
+
+ <br>
+ 
 ![](images/Atari.jpg) 
 
 ## The games we played:
