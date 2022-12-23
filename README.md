@@ -26,14 +26,12 @@ Mathematically, we can define it as a tuple < $S,A,P,R,\gamma$ > where
 * $P$ a state transition probability matrix with $P_{ss' a} = P(S_{t+1} = s' \rvert S_t=s, A_t=a)$
 * $R$ is a reward function and $\gamma$ a discount factor with $R_{s a} = E(R_{t+1} \rvert St=s, At=a)$
 
-Then, we can define a policy as $\pi(a \rvert s) = P(A_t = a \rvert S_t = s)$.
-We can also define the action value function: 
+Then, we can define a policy as $\pi(a \rvert s) = P(A_t = a \rvert S_t = s)$ and the action value function as $q_{\pi}(s,a) = E_{\pi}[R_{t+1} + \gamma q_{\pi}(S_{t+1},A_{t+1}) \rvert S_t=s, A_t=a)]$.
 
-$q_{\pi}(s,a) = E_{\pi}[R_{t+1} + \gamma q_{\pi}(S_{t+1},A_{t+1}) \rvert S_t=s, A_t=a)]$
+Let's remember that the Bellman equation is specifically $v = R + \gamma P v$ with v the state-value function.
 
 An optimal policy can be found by maximising over $q∗(s,a)$ such that if we know $q∗(s,a)$, we immediately have the optimal policy.
-
-Soving the Bellman equation can then be done iteratively by Q-learning, and the DQN algorithm above
+Then, soving the Bellman equation can then be done iteratively by Q-learning, and in our case by the DQN algorithm above
  <br />
 ![](images/Atari.jpg) 
 
