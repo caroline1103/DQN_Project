@@ -12,9 +12,16 @@ In reinforcement learning, the problem is not supervised, meaning we let the com
 
 ### Details on a Markov Decision Process
 
+First, let's remember that a markov state is a state $S_t$ such that the next state $S_{t+1} only depends on the current state $S_t$ but not on the previous states ($S_1  , ... , S_{t-1}).
+Then, a markov decision process is an environment in which all states are Markov. 
+
+Mathematically, we can define it as a tuple $<S,A,P,R,\gamma>$ where $S$ is a finite set of states, $A$ a finite set of actions, $P$ a state transition probability matrix, $R$ is a reward function and $\gamma>$ a discount factor.
 
 ### And what about DQN?
+Below is the Deep Q-Learning algorithm which was introduced by Mnih et al. 2013. DQN is here to predict the best action, as we cannot get the true $Q*(s,a)$.
+> The goal of DQN is "to connect a reinforcement learning algorithm to a deep neural network which operates directly on RGB images and efficiently process training data by using stochastic gradient updates."
 
+![](images/DQN.png)
 
 ![](images/Atari.jpg) 
 ## The games we played:
