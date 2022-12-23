@@ -77,6 +77,10 @@ We observe that training is quite unstable, but the computer learns quite well i
 
  <br>
 
+ <br>
+
+ <br>
+
 ## Breakout
 
  <br>
