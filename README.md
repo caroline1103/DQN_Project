@@ -1,4 +1,4 @@
-# DQN_Project
+# Deep Reinforcement Learning: Deep Q-Network for playing Atari games 🎮
 
 Implementation of DQN algorithm on CartPole and Breakout from gym environment
 
