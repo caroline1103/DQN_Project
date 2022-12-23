@@ -1,5 +1,7 @@
 # Deep Reinforcement Learning: Playing Atari games 🎮
 
+![](images/tele.gif) 
+
 ## What is Deep Reinforcement Learning?
 
 Deep Reinforcement learning is a combination of reinforcement learning and deep learning. 
@@ -18,13 +20,17 @@ I tried to implement a DQN algorithm on CartPole and Breakout from the gym envir
 Both games have a discrete action spaces, Cartpole can only move right or left and Breakout has two more actions available: do nothing and fire. 
 
 ## Cartpole
+
 Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
 
 
 ## Breakout
-![](visual_examples/breakout_before_training.gif)
+
+Breakout before training           |  Breakout after training
+:---------------------------------:|:---------------------------------:
+![](visual_examples/breakout_before_training.gif) | 
 
 
 ## The issues..
