@@ -113,7 +113,7 @@ As we can see, the agent did not learn a lot trough its training. Even if the nu
 
  <br>
 
-<img align="left" width="350" height="300" src="images/pacman.png">
+<img align="left" width="420" height="300" src="images/pacman.png">
 As you can see, the agent did not learn well on the breakout game. 
 
 I wanted to keep the algorithm I used for cartpole as it worked very well to train this game. However, major changes had to be implemented for the algorithm to work on breakout so it might not have been the best idea.
