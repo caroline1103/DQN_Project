@@ -31,9 +31,7 @@ Cartpole before training           |  Cartpole after training
 :---------------------------------:|:---------------------------------:
 ![](visual_examples/Cartpole_before_training.gif)  |  ![](visual_examples/Cartpole_after_training.gif)
 
-<br/>
-There is a signficant improvment!
-<br/>
+
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole1.png">
 <br/>
 <img align="left" width="250" height="200" src="visual_examples/duration_cartpole2.png">
