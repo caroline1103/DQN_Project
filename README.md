@@ -13,7 +13,7 @@ Our games have a discrete action spaces, Cartpole can only move right or left an
 ### And what about DQN?
 
 
-![](images/atari.jpg) 
+![](images/Atari.jpg) 
 ## The games we played:
 
 ## Cartpole
